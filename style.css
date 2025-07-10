@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  overflow: scroll;
+  font-family: 'Darumadrop One';font-size: 22px;
+  color: turquoise;
+  display: inline-block;
+  text-align: center;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Images/Yucko\'s\ Background\ Choice.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  filter: blur(5px); /* Adjust the blur amount */
+  z-index: -10;
+}
+
+.fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.fab:hover {
+    transform: scale(1.2);
+}
+
+.fix-center {
+  position: absolute;
+  top: 500px;
+  left: 150px;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 125px !important;
+  height: 125px !important;
+
+  font-size: 24px !important;
+  border-radius: 50% !important;
+  color: white !important;
+  text-decoration: none !important;
+
+  z-index: 9999 !important;
+  box-sizing: border-box !important;
+}
+
+.fix-center::before {
+  font-size: 75px !important; /* or whatever size you want */
+  line-height: 1 !important;
+}
+
+.fa-instagram {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+}
+
+.fa-tiktok {
+  background: black;
+  color: white;
+}
+
+.scroll-box {
+  position: absolute;
+  font-size: larger;
+  border: 2px solid turquoise;
+  width: fit-content;
+  height: 300px;
+  margin-left: 400px;
+  overflow: auto;
+}
+
+.scroll-box2 {
+  position: absolute;
+  border: 2px solid turquoise;
+  width: fit-content;
+  overflow: auto;
+  height: 180px;
+  margin-top: 925px;
+  margin-left: 400px;
+}
+
+.scroll-box3 {
+  position: absolute;
+  border: 2px solid turquoise;
+  width: fit-content;
+  overflow: auto;
+  height: 125px;
+  margin-top: 1125px;
+  margin-left: 355px;
+}
+
+.moving-text-container {
+  width: 1000px; /* Or set a specific width */
+  overflow: hidden; /* Hide anything that goes outside the container */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  border: solid 2px turquoise;
+  margin-top: -780px;
+  margin-left: 250px;
+}
+
+.moving-text {
+  /* Set initial position */
+  position: relative; /* Allows you to use `left` or `transform` */
+  display: inline-block; /* Essential for animating text movement */
+  animation: scrollText 10s linear infinite; /* Define the animation */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
+
+.dev-log-title {
+  position: absolute;
+  color: white;
+  font-family: "Lucida Console", Monaco, monospace;
+  top: 2260px;
+  left: 380px;
+}
+
+.dev-log {
+  position: absolute;
+  color: white;
+  font-family: "Lucida Console", Monaco, monospace;
+  top: 2260px;
+  left: 360px;
+  text-align: left;
+  border: solid 2px white;
+  width: fit-content;
+  padding: 20px;
+  padding-top: 50px;
+}
