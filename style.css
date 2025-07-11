@@ -120,15 +120,15 @@ body::before {
   /* Set initial position */
   position: relative; /* Allows you to use `left` or `transform` */
   display: inline-block; /* Essential for animating text movement */
-  animation: scrollText 120s linear infinite; /* Define the animation */
+  animation: scrollText 600s linear infinite; /* Define the animation */
 }
 
 @keyframes scrollText {
   0% {
-    transform: translateX(50%); /* Start off-screen to the right */
+    transform: translateX(25%); /* Start off-screen to the right */
   }
   100% {
-    transform: translateX(-50%); /* End off-screen to the left */
+    transform: translateX(-25%); /* End off-screen to the left */
   }
 }
 
