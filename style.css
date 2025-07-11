@@ -120,7 +120,7 @@ body::before {
   /* Set initial position */
   position: relative; /* Allows you to use `left` or `transform` */
   display: inline-block; /* Essential for animating text movement */
-  animation: scrollText 10s linear infinite; /* Define the animation */
+  animation: scrollText 20s linear infinite; /* Define the animation */
 }
 
 @keyframes scrollText {
